@@ -5,9 +5,11 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  margin: 0;
-  padding: 0;
   background-color: #f2f2f2;
+}
+
+.identity {
+  margin: 10px 0;
 }
 
 .container {
