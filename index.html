@@ -1,29 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+
+    <title>Rangga Adithia</title>
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      href="assets/fonts/lineicons/font-css/LineIcons.css"
     />
-    <title>To-Do List</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="identity">
-        <h4>I Gusti Putu Rangga Adithia Putra</h4>
-        <p>2215101001</p>
-      </div>
-      <h1>To-Do List</h1>
 
-      <input type="text" id="taskInput" placeholder="add task" />
-      <button id="addTask" class="button">
-        <i class="bi bi-plus-circle"></i> add
-      </button>
-      <ul id="taskList"></ul>
-    </div>
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="assets/css/tailwindcss.css" />
+  </head>
+
+  <body class="text-white">
+    <section class="header_area">
+      <div
+        id="home"
+        class="header_hero bg-black relative z-10 overflow-hidden lg:flex items-center"
+      >
+        <div class="hero_shape shape_1">
+          <img src="assets/images/shape/shape-1.svg" alt="shape" />
+        </div>
+        <!-- hero shape -->
+        <div class="hero_shape shape_2">
+          <img src="assets/images/shape/shape-2.svg" alt="shape" />
+        </div>
+        <!-- hero shape -->
+        <div class="hero_shape shape_3">
+          <img src="assets/images/shape/shape-3.svg" alt="shape" />
+        </div>
+        <!-- hero shape -->
+        <div class="hero_shape shape_4">
+          <img src="assets/images/shape/shape-4.svg" alt="shape" />
+        </div>
+        <!-- hero shape -->
+        <div class="hero_shape shape_6">
+          <img src="assets/images/shape/shape-1.svg" alt="shape" />
+        </div>
+        <!-- hero shape -->
+        <div class="hero_shape shape_7">
+          <img src="assets/images/shape/shape-4.svg" alt="shape" />
+        </div>
+        <!-- hero shape -->
+        <div class="hero_shape shape_8">
+          <img src="assets/images/shape/shape-3.svg" alt="shape" />
+        </div>
+        <!-- hero shape -->
+        <div class="hero_shape shape_9">
+          <img src="assets/images/shape/shape-2.svg" alt="shape" />
+        </div>
+        <!-- hero shape -->
+        <div class="hero_shape shape_10">
+          <img src="assets/images/shape/shape-4.svg" alt="shape" />
+        </div>
+        <!-- hero shape -->
+        <div class="hero_shape shape_11">
+          <img src="assets/images/shape/shape-1.svg" alt="shape" />
+        </div>
+        <!-- hero shape -->
+        <div class="hero_shape shape_12">
+          <img src="assets/images/shape/shape-2.svg" alt="shape" />
+        </div>
+        <!-- hero shape -->
+
+        <div class="container">
+          <div class="w-full">
+            <div class="header_hero_content lg:pt-0 pt-120 lg:pl-14">
+              <p
+                class="text-theme-color mb-3 font-semibold text-lg lg:text-2xl"
+              >
+                Hi, i’m Rangga Adithia
+              </p>
+              <h2
+                class="hero_title text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold text-white"
+              >
+                Full Stack Web <br />Development
+              </h2>
+              <p class="mt-8 lg:mr-8 text-white" style="opacity: 70%">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
+                ullam consequuntur quas, veniam eos beatae? Quae sint
+                exercitationem dolorum deserunt nam nemo eos accusantium sed
+                mollitia incidunt eum voluptate nesciunt aut, distinctio natus
+                veniam reprehenderit voluptatem vero ut. Ut perferendis
+                praesentium dignissimos fugiat quidem suscipit alias eveniet.
+                Numquam, debitis ratione.
+              </p>
+              <div class="flex mt-10 gap-x-7 items-center">
+                <div class="hero_btn">
+                  <a class="main-btn" href="mailto:rangga.adithia26@gmail.com"
+                    >Email me</a
+                  >
+                </div>
+                <a
+                  href=""
+                  class="text-4xl text-white opacity-70 hover:opacity-100 hidden lg:block"
+                >
+                  <i class="lni lni-instagram"></i>
+                </a>
+                <a
+                  href=""
+                  class="text-4xl text-white opacity-70 hover:opacity-100 hidden lg:block"
+                >
+                  <i class="lni lni-github"></i>
+                </a>
+                <a
+                  href=""
+                  class="text-4xl text-white opacity-70 hover:opacity-100 hidden lg:block"
+                >
+                  <i class="lni lni-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+            <!-- header hero content -->
+          </div>
+          <!-- row -->
+        </div>
+        <div class="w-1/2 pr-15 hidden lg:block">
+          <img src="assets/images/profile.jpg" alt="" class="rounded-lg" />
+        </div>
+      </div>
+      <!-- header hero -->
+    </section>
+
+    <section class="project bg-body-color" id="project">
+      <div class="px-7 lg:px-25 mx-auto pt-10">
+        <div class="text-center mb-5">
+          <p class="text-theme-color text-xl font-semibold -mb-2">Selected</p>
+          <h1 class="text-white">Projects</h1>
+        </div>
+        <div class="mt-3">
+          <img src="assets/images/project1.jpg" alt="" class="rounded-xl" />
+          <div
+            class="flex mt-3 gap-x-2 text-sm justify-between lg:justify-start"
+          >
+            <a href="" class="opacity-80"
+              ><i class="lni lni-book"></i> View Study Case</a
+            >
+            <a href="https://mytourbali.com/" class="opacity-80"
+              ><i class="lni lni-link"></i> Visit Website</a
+            >
+          </div>
+        </div>
+        <div class="mt-10">
+          <img src="assets/images/Frame 2.jpg" alt="" class="rounded-xl" />
+          <div
+            class="flex mt-3 gap-x-2 text-sm justify-between lg:justify-start"
+          >
+            <a href="" class="opacity-80"
+              ><i class="lni lni-book"></i> View Study Case</a
+            >
+            <a
+              href="https://dirtier-magnitude.000webhostapp.com/"
+              class="opacity-80"
+              ><i class="lni lni-link"></i> Visit Website</a
+            >
+          </div>
+        </div>
+        <div class="mt-10">
+          <img src="assets/images/sipemikir.jpg" alt="" class="rounded-xl" />
+          <div
+            class="flex mt-3 gap-x-2 text-sm justify-between lg:justify-start"
+          >
+            <a href="https://sipemikir.online/" class="opacity-80"
+              ><i class="lni lni-book"></i> View Study Case</a
+            >
+            <a href="" class="opacity-80"
+              ><i class="lni lni-link"></i> Visit Website</a
+            >
+          </div>
+        </div>
+        <div class="mt-10">
+          <img src="assets/images/luxspace.webp" alt="" class="rounded-xl" />
+          <div
+            class="flex mt-3 gap-x-2 text-sm justify-between lg:justify-start"
+          >
+            <a href="" class="opacity-80"
+              ><i class="lni lni-book"></i> View Study Case</a
+            >
+            <a href="https://wdc-ecommerce.vercel.app/" class="opacity-80"
+              ><i class="lni lni-link"></i> Visit Website</a
+            >
+          </div>
+        </div>
+        <a href="" class="mx-auto text-center block underline mt-10"
+          >see more</a
+        >
+      </div>
+    </section>
+
+    <!--====== TEAM PART ENDS ======-->
+
+    <!--====== BLOG PART START ======-->
+
+    <section id="blog" class="pt-120 bg-body-color">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="w-full lg:w-1/2">
+            <div class="section_title text-center pb-6">
+              <h5 class="sub_title -mb-2">Blog</h5>
+              <h4 class="main_title text-white">From The Blog</h4>
+            </div>
+            <!-- section title -->
+          </div>
+        </div>
+        <!-- row -->
+        <div class="row justify-center lg:justify-start">
+          <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
+            <div
+              class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg"
+            >
+              <div class="blog_image">
+                <img
+                  src="assets/images/shape/Laravel-10.jpeg"
+                  alt="blog"
+                  class="w-full"
+                />
+              </div>
+              <div class="blog_content p-4 md:p-5">
+                <h3 class="">
+                  <a href="#">Laravel 10.x What's new?</a>
+                </h3>
+                <a href="#" class="more_btn">Read More</a>
+              </div>
+            </div>
+            <!-- row -->
+          </div>
+          <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
+            <div
+              class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg"
+            >
+              <div class="blog_image">
+                <img src="assets/images/bun.png" alt="blog" class="w-full" />
+              </div>
+              <div class="blog_content p-4 md:p-5">
+                <h3>
+                  <a href="#">Bun.JS pesaing baru Node.JS</a>
+                </h3>
+                <a href="#" class="more_btn">Read More</a>
+              </div>
+            </div>
+            <!-- row -->
+          </div>
+          <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12">
+            <div
+              class="single_blog mx-3 mt-8 rounded-xl bg-white transition-all duration-300 overflow-hidden hover:shadow-lg"
+            >
+              <div class="blog_image">
+                <img
+                  src="assets/images/apple-vision-pro__cctkg4nhnb7m_og.png"
+                  alt="blog"
+                  class="w-full"
+                />
+              </div>
+              <div class="blog_content p-4 md:p-5">
+                <h3>
+                  <a href="#">Change the way we see the digital world</a>
+                </h3>
+                <a href="#" class="more_btn">Read More</a>
+              </div>
+            </div>
+            <!-- row -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <footer id="footer" class="footer_area bg-black relative z-10">
+      <div
+        class="shape absolute left-0 top-0 opacity-5 h-full overflow-hidden w-1/3"
+      >
+        <img src="assets/images/footer-shape-left.png" alt="" />
+      </div>
+      <div
+        class="shape absolute right-0 top-0 opacity-5 h-full overflow-hidden w-1/3"
+      >
+        <img src="assets/images/footer-shape-right.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="footer_widget pt-18 pb-18">
+          <div class="row justify-center">
+            <div class="w-full">
+              <div class="mt-10 mx-3">
+                <h1 class="text-white">Get in touch</h1>
+                <div class="footer_content mt-3">
+                  <p class="text-white">
+                    For business inquiry please send email to
+                    <a href="" class="underline">
+                      rangga.adithia26@gmail.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <!-- footer about -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- footer widget -->
+      </div>
+      <!-- container -->
+    </footer>
   </body>
 </html>
